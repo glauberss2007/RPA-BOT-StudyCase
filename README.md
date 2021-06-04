@@ -12,7 +12,7 @@ Automation Anywhere allows organizations to automate the processes which are per
     
     - Access Regex site https://regex101.com/ and type: José da Silva, Rua Era só mais um silva, 177, Centro Esquerda da Direita, Vitória, ES, CEP 29.999-545, Brasileiro, Solteiro.
 
-    - Import def regex to python:
+    - Search for CEP in text and get position (first and last element):
     ![image](https://user-images.githubusercontent.com/22028539/120869416-d247e900-c56c-11eb-918e-aef153fef868.png)
             
              import re 
