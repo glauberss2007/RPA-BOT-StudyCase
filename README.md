@@ -1,4 +1,7 @@
 # automation-anywhere
+![image](https://user-images.githubusercontent.com/22028539/120869764-8ea1af00-c56d-11eb-8848-8a74fa44dacf.png)
+
+## Automation Anywhere allows organizations to automate the processes which are performed by the humans. It is a Web-Based Management System which uses a Control Room to run the Automated Tasks. Automation Anywhere tool can automate ends to end business operations for companies.
 
 1. Cadastrar no site https://www.automationanywhere.com/
 2. Realizar o acesso na ferramenta online pelo link: https://community2.cloud-2.automationanywhere.digital/#/login?next=/index
