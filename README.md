@@ -24,4 +24,6 @@ Automation Anywhere allows organizations to automate the processes which are per
                 return cep
                 
                 
+    - Setupo your bot:
+           ![image](https://user-images.githubusercontent.com/22028539/120871896-6ddc5800-c573-11eb-9611-a74d1dcf2de4.png)
 
