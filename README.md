@@ -3,6 +3,7 @@
 
 Automation Anywhere allows organizations to automate the processes which are performed by the humans. It is a Web-Based Management System which uses a Control Room to run the Automated Tasks. Automation Anywhere tool can automate ends to end business operations for companies.
 
+## HandsOn
 1. Cadastrar no site https://www.automationanywhere.com/
 2. Realizar o acesso na ferramenta online pelo link: https://community2.cloud-2.automationanywhere.digital/#/login?next=/index
 3. Crie um novo bot a partir de um script python:
