@@ -3,7 +3,32 @@
 
 Automation Anywhere allows organizations to automate the processes which are performed by the humans. It is a Web-Based Management System which uses a Control Room to run the Automated Tasks. Automation Anywhere tool can automate ends to end business operations for companies.
 
-## HandsOn
+## Robot Process Automation
+RPA can be used to automate repetitive tasks both in the back office and front office that require human intervention. Some common RPA examples and use cases we encounter are automation of data entry, data extraction, and invoice processing. There are additional examples of RPA use cases automating tasks in different business departments (Sales, HR, operations, etc.) and industries (banking, retail, manufacturing, etc.).
+
+Some examples [Examples](https://research.aimultiple.com/robotic-process-automation-use-cases/#customer-service):
+1. ommon business processes and activities
+2. cvities in commercial functions
+    - Sales
+    - Customer Relationship Management
+3. Activities in support functions
+    - Tech Support
+    - Technology
+    - Finance
+    - HR
+    - Operations
+    - Procurement
+4. Industry specific activities
+    - Banking
+    - Insurance
+    - Telecom
+    - Retail
+    - Manufacturing
+    - Healthcare
+    - Government
+5. RPA applications for personal use such as digital assistants
+
+## HandsOn 2
 1. Cadastrar no site https://www.automationanywhere.com/
 2. Realizar o acesso na ferramenta online pelo link: https://community2.cloud-2.automationanywhere.digital/#/login?next=/index
 3. Crie um novo bot a partir de um script python:
