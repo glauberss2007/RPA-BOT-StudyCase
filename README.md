@@ -38,6 +38,8 @@ Some examples [Examples](https://research.aimultiple.com/robotic-process-automat
 ![image](https://user-images.githubusercontent.com/22028539/121692694-b5e10a80-ca9e-11eb-825d-bb9f0e4f5be8.png)
 
 1. Open site & extract to CSV
+    - ![image](https://user-images.githubusercontent.com/22028539/121696251-440ac000-caa2-11eb-9d84-325098519195.png)
+
 2. Open CSV & launch CRM website
 3. Loop Customers & enter data
 4. Save & send CSV to RM
