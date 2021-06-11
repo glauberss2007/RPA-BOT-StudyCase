@@ -34,6 +34,18 @@ Some examples [Examples](https://research.aimultiple.com/robotic-process-automat
 1. Create an account to use community version: [Link to create account](https://apeople.automationanywhere.com/sso/s/login/?inst=2t)
 2. Get training: [Link to official training](https://apeople.automationanywhere.com/s/group/0F96F000000l2H1SAI/training-and-certification)
 
+## Handson 1 - Steps
+![image](https://user-images.githubusercontent.com/22028539/121692694-b5e10a80-ca9e-11eb-825d-bb9f0e4f5be8.png)
+
+1. Open site & extract to CSV
+2. Open CSV & launch CRM website
+3. Loop Customers & enter data
+4. Save & send CSV to RM
+
+URLs:
+- https://rpademo.automationanywhere.com/itbricks_enroll.php
+- https://rpademo.automationanywhere.com/itbricks_crm.php
+
 ## HandsOn 2
 1. Cadastrar no site https://www.automationanywhere.com/
 2. Realizar o acesso na ferramenta online pelo link: https://community2.cloud-2.automationanywhere.digital/#/login?next=/index
