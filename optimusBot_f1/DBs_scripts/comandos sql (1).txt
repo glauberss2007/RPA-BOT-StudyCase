@@ -1,0 +1,110 @@
+===========================================================================================================================
+                                 COPIAR TUDO ABAIXO ATÉ A PRÓXIMA LINHA TRACEJADA
+===========================================================================================================================
+
+CREATE DATABASE `formula1` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_bin */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+
+CREATE TABLE `formula1`.`circuits` (
+  `circuitid` INT(11) NOT NULL,
+  `circuitRef` VARCHAR(255) NULL,
+  `name` VARCHAR(255) NULL,
+  `location` VARCHAR(255) NULL,
+  `country` VARCHAR(255) NULL,
+  `lat` FLOAT NULL,
+  `lng` FLOAT NULL,
+  `alt` INT(11) NULL,
+  `url` VARCHAR(255) NULL,
+  PRIMARY KEY (`circuitid`));
+
+
+
+CREATE TABLE `formula1`.`constructorResults` (
+  `constructorResultid` INT(11) NOT NULL,
+  `raceid` INT(11) NULL,
+  `constructorID` INT(11) NULL,
+  `points` FLOAT NULL,
+  `status` VARCHAR(255) NULL,
+  PRIMARY KEY (`constructorResultid`),
+  UNIQUE KEY `idx_constructorresults_constructorID` (`constructorID`),
+  UNIQUE KEY `idx_constructorresults_raceid` (`raceid`));
+
+
+
+CREATE TABLE `formula1`.`constructors` (
+  `constructorid` INT(11) NOT NULL,
+  `constructorRef` VARCHAR(255) NULL,
+  `name` VARCHAR(255) NULL,
+  `nationality` VARCHAR(255) NULL,
+  `url` VARCHAR(255) NULL,
+  PRIMARY KEY (`constructorid`));
+
+
+CREATE TABLE `formula1`.`drivers` (
+  `driverId` INT(11) NOT NULL,
+  `driverRef` VARCHAR(255) NULL,
+  `number` INT(11) NULL,
+  `code` VARCHAR(3) NULL,
+  `forename` VARCHAR(255) NULL,
+  `surname` VARCHAR(255) NULL,
+  `dob` DATE NULL,
+  `nationality` VARCHAR(255) NULL,
+  `url` VARCHAR(255) NULL,
+  PRIMARY KEY (`driverId`));
+
+
+
+CREATE TABLE `formula1`.`races` (
+  `raceid` INT(11) NOT NULL,
+  `year` INT(11) NULL,
+  `round` INT(11) NULL,
+  `circuitid` INT(11) NULL,
+  `name` VARCHAR(255) NULL,
+  `date` DATE NULL,
+  `time` TIME NULL,
+  `url` VARCHAR(255) NULL,
+  PRIMARY KEY (`raceid`),
+  UNIQUE KEY `idx_races_circuitid` (`circuitid`));
+
+CREATE TABLE `formula1`.`results` (
+  `resultid` INT(11) NOT NULL,
+  `raceid` INT(11) NULL,
+  `driverid` INT(11) NULL,
+  `constructorid` INT(11) NULL,
+  `number` INT(11) NULL,
+  `grid` INT(11) NULL,
+  `position` INT(11) NULL,
+  `positionText` VARCHAR(255) NULL,
+  `positionOrder` INT(11) NULL,
+  `points` FLOAT NULL,
+  `laps` INT(11) NULL,
+  `time` VARCHAR(255) NULL,
+  `miliseconds` INT(11) NULL,
+  `fastestLap` INT(11) NULL,
+  `rank` INT(11) NULL,
+  `fastestLapTime` VARCHAR(255) NULL,
+  `fastestLapSpeed` VARCHAR(255) NULL,
+  `statusid` INT(11) NULL,
+  PRIMARY KEY (`resultid`),
+  UNIQUE KEY `idx_results_raceid` (`raceid`),
+  UNIQUE KEY `idx_results_driverid` (`driverid`),
+  UNIQUE KEY `idx_results_constructorid` (`constructorid`));
+
+===========================================================================================================================
+Após criar banco, deve-se selecionar o banco para posteriormente criar os relacionamentos entre tabelas
+===========================================================================================================================
+
+
+ALTER TABLE `circuits` ADD CONSTRAINT `fk_circuits` FOREIGN KEY ( `circuitid` ) REFERENCES `races` ( `circuitid` ) ;
+
+ALTER TABLE `races` ADD CONSTRAINT `fk_races` FOREIGN KEY ( `raceid` ) REFERENCES `constructorResults` ( `raceid` ) ;
+
+ALTER TABLE `races` ADD CONSTRAINT `fk_races2` FOREIGN KEY ( `raceid` ) REFERENCES `results` ( `raceid` ) ;
+
+ALTER TABLE `constructors` ADD CONSTRAINT `fk_constructors` FOREIGN KEY ( `constructorid` ) REFERENCES `constructorresults` ( `constructorid` ) ;
+
+ALTER TABLE `constructors` ADD CONSTRAINT `fk_constructors2` FOREIGN KEY ( `constructorid` ) REFERENCES `results` ( `constructorid` ) ;
+
+ALTER TABLE `drivers` ADD CONSTRAINT `fk_drivers` FOREIGN KEY ( `driverid` ) REFERENCES `results` ( `driverid` ) ;
+
+
