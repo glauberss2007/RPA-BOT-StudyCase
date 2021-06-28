@@ -6,7 +6,7 @@ Automation Anywhere allows organizations to automate the processes which are per
 ## Robot Process Automation
 RPA can be used to automate repetitive tasks both in the back office and front office that require human intervention. Some common RPA examples and use cases we encounter are automation of data entry, data extraction, and invoice processing. There are additional examples of RPA use cases automating tasks in different business departments (Sales, HR, operations, etc.) and industries (banking, retail, manufacturing, etc.).
 
-Some examples of use cases [Examples](https://research.aimultiple.com/robotic-process-automation-use-cases/#customer-service):
+Some examples of use cases [Examples](https://research.aimultiple.com/robotic-process-automation-use-cases/#customer-service)
 
 ## Requiremnt
 1. Create an account to use community version: [Link to create account](https://apeople.automationanywhere.com/sso/s/login/?inst=2t)
