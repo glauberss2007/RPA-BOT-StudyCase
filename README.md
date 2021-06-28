@@ -11,4 +11,4 @@ Some examples of use cases [Examples](https://research.aimultiple.com/robotic-pr
 ## Requiremnt
 1. Create an account to use community version: [Link to create account](https://apeople.automationanywhere.com/sso/s/login/?inst=2t)
 2. Get training: [Link to official training](https://apeople.automationanywhere.com/s/group/0F96F000000l2H1SAI/training-and-certification)
-3. [Community](https://community2.cloud-2.automationanywhere.digital/#/login?next=/index)
+3. [Online tool link for community](https://community2.cloud-2.automationanywhere.digital/#/login?next=/index)
