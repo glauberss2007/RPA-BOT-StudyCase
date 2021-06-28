@@ -1,10 +1,10 @@
-MER
+# MER
 
 ![image](https://user-images.githubusercontent.com/22028539/123632415-47b27c80-d7ee-11eb-9594-3016ba61a4b8.png)
 
 This MER will be used as structure to receive imported data from diferetn sources.
 
-Script used to MER creation:
+## Script used to MER creation:
 
     CREATE TABLE circuits (circuitid INT(11), circuitRef VARCHAR(255), name VARCHAR(255), location VARCHAR(255), country VARCHAR(255), lat FLOAT, lng FLOAT, alt INT(11), url varchar(255));
     CREATE TABLE drivers (driverid INT(11), driverRef VARCHAR(255), number INT(11), code VARCHAR(3), forename VARCHAR(255), surname VARCHAR(255), dob DATE, nationality VARCHAR(255), url varchar(255));
